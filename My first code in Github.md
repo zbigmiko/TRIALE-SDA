@@ -6,7 +6,7 @@ for (var i = 0; i <= 10; i++) {
 
 tablica.push(i);
 
-zmiennaTemp = Math.ceil(Math.random() * 10); 
+zmiennaTemp = Math.floor(Math.random() * 10); 
 
 tablica[i] = zmiennaTemp
 
@@ -16,14 +16,14 @@ var zmiennaMax = tablica[0];
 
 var zmiennaMin = tablica[0];
 
-for (var i = 0; i < tablica.length; i++) {
+for (var j = 0; j < tablica.length; j++) {
 
-  if (zmiennaMin > tablica[i]) {
-    zmiennaMin = tablica[i];
+  if (zmiennaMin > tablica[j]) {
+    zmiennaMin = tablica[j];
   }
-  if (zmiennaMax < tablica[i]) {
+  if (zmiennaMax < tablica[j]) {
 
-zmiennaMax = tablica[i];
+zmiennaMax = tablica[j];
   }
 }
 
@@ -31,8 +31,8 @@ var suma = 0;
 
 var srednia = 0;
 
-for (var i = 0; i < tablica.length; i++) {
-  suma = suma + tablica[i];
+for (var k = 0; i < tablica.length; i++) {
+  suma = suma + tablica[k];
 
 }
 
